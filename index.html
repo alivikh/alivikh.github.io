@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Your Name – WordPress & WooCommerce Designer-Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f9f8;--surface:#fff;--ink:#12302f;--muted:#4f6b69;--teal:#0e6b66;--mint:#cfeee8;--rose:#d9446b;--line:#cfe0dd;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1f1e;--surface:#142b29;--ink:#e6f3f1;--muted:#9bb7b3;--teal:#4fd1c5;--mint:#1c3d3a;--rose:#ff7a9c;--line:#274744}}
+:root[data-theme="dark"]{--bg:#0d1f1e;--surface:#142b29;--ink:#e6f3f1;--muted:#9bb7b3;--teal:#4fd1c5;--mint:#1c3d3a;--rose:#ff7a9c;--line:#274744}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Figtree,system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",Georgia,sans-serif;line-height:1.1;margin:0}
+a{color:var(--teal)}
+:focus-visible{outline:3px solid var(--rose);outline-offset:2px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+header.top b{font-family:"Bricolage Grotesque",sans-serif;font-size:20px}
+nav a{margin-left:18px;text-decoration:none;color:var(--muted);font-weight:500}
+nav a:hover{color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center;padding:56px 0 72px}
+.hero h1{font-size:clamp(36px,6vw,64px);font-weight:700;letter-spacing:-.02em}
+.hero p{color:var(--muted);max-width:52ch;margin:20px 0 28px}
+.btn{display:inline-block;background:var(--teal);color:var(--bg);padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;margin-right:10px}
+.btn.alt{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.mock{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:18px;max-width:320px;justify-self:center;width:100%}
+.mock .img{aspect-ratio:1;border-radius:12px;background:linear-gradient(160deg,var(--mint),var(--surface));display:grid;place-items:center}
+.mock .tube{width:44px;height:150px;border-radius:10px 10px 6px 6px;background:var(--teal);position:relative}
+.mock .tube::before{content:"";position:absolute;top:-16px;left:12px;width:20px;height:16px;background:var(--rose);border-radius:4px 4px 0 0}
+.mock h3{font-size:19px;margin:14px 0 2px}
+.mock small{color:var(--muted)}
+.mock .row{display:flex;justify-content:space-between;align-items:center;margin-top:12px}
+.mock .add{background:var(--rose);color:#fff;border-radius:999px;padding:7px 16px;font-weight:600;font-size:14px}
+.stars{color:var(--rose);letter-spacing:2px;font-size:14px}
+section{padding:56px 0;border-top:1px solid var(--line)}
+section>.wrap>h2{font-size:clamp(28px,4vw,40px);margin-bottom:10px}
+.lead{color:var(--muted);max-width:60ch;margin:0 0 32px}
+.case{display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;padding:30px 0;border-bottom:1px solid var(--line)}
+.case:last-child{border-bottom:0}
+.shot{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px;align-self:start}
+.bar{display:flex;gap:5px;margin-bottom:12px}.bar i{width:9px;height:9px;border-radius:50%;background:var(--line)}
+.blk{height:12px;border-radius:6px;background:var(--mint);margin:8px 0}
+.blk.w1{width:80%}.blk.w2{width:55%}.blk.t{height:70px;background:linear-gradient(90deg,var(--mint),var(--surface))}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.chips span{background:var(--mint);border-radius:999px;padding:3px 12px;font-size:14px;font-weight:500}
+.case h3{font-size:26px;margin-bottom:6px}
+.case dl{margin:16px 0 0}.case dt{font-weight:600;margin-top:10px}.case dd{margin:2px 0 0;color:var(--muted)}
+.todo{background:var(--mint);border-left:4px solid var(--rose);padding:3px 10px;border-radius:4px;color:var(--ink)}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:26px}
+.skills h3{font-size:20px;margin-bottom:8px}.skills ul{margin:0;padding-left:18px;color:var(--muted)}
+.contact{padding-bottom:90px}
+footer{color:var(--muted);font-size:14px;padding-bottom:30px}
+@media(max-width:760px){.hero,.case{grid-template-columns:1fr}nav a:first-child{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><b>Your Name</b><nav><a href="#work">Work</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav></header>
+
+<div class="hero">
+<div>
+<h1>Websites that look trustworthy and sell.</h1>
+<p>I’m a WordPress and WooCommerce designer-developer. I take a shop from wireframe to launch, then keep improving speed, search visibility and conversion.</p>
+<a class="btn" href="#work">See my work</a><a class="btn alt" href="#contact">Get in touch</a>
+</div>
+<div class="mock" aria-label="Sample WooCommerce product card">
+<div class="img"><div class="tube"></div></div>
+<h3>Sensitive Whitening Toothpaste</h3><small>75ml · Fluoride 1450ppm</small>
+<div class="row"><span><span class="stars">★★★★★</span> <small>4.8</small></span><span class="add">Add to basket</span></div>
+</div>
+</div>
+</div>
+
+<section id="work"><div class="wrap">
+<h2>Selected projects</h2>
+<p class="lead">Each project shows my own role, the tools I used and the result. Replace the highlighted notes with your real details before sending.</p>
+
+<article class="case">
+<div class="shot"><div class="bar"><i></i><i></i><i></i></div><div class="blk t"></div><div class="blk w1"></div><div class="blk w2"></div></div>
+<div>
+<h3>Oral care WooCommerce store</h3>
+<div class="chips"><span>WooCommerce</span><span>Custom theme</span><span>PHP</span><span>Figma</span></div>
+<p>A full redesign of a health product shop, focused on clearer product pages, simpler category navigation and a shorter checkout.</p>
+<dl>
+<dt>My role</dt><dd>Design, theme development, WooCommerce setup, SEO and launch.</dd>
+<dt>What I did</dt><dd>Built variation swatches, bundle discounts, a one-page checkout and Product schema. Tested everything on staging first.</dd>
+<dt>Result</dt><dd><span class="todo">Add real figures, e.g. conversion rate +X%, LCP from X s to Y s.</span></dd>
+<dt>Link</dt><dd><a href="#">Live site or case study URL</a></dd>
+</dl></div>
+</article>
+
+<article class="case">
+<div class="shot"><div class="bar"><i></i><i></i><i></i></div><div class="blk t"></div><div class="blk w2"></div><div class="blk w1"></div></div>
+<div>
+<h3>Medical supplies catalogue and campaign pages</h3>
+<div class="chips"><span>WordPress</span><span>Elementor</span><span>GA4</span><span>Search Console</span></div>
+<p>A catalogue site for a regulated product range, with clear product information, accessible layouts and landing pages for promotions.</p>
+<dl>
+<dt>My role</dt><dd>Layout design, template building, content upload and analytics tracking.</dd>
+<dt>What I did</dt><dd>Set up GA4 events, structured data and reusable campaign templates, and met WCAG 2.1 AA contrast and keyboard standards.</dd>
+<dt>Result</dt><dd><span class="todo">Add real figures, e.g. organic traffic +X%, campaign pages launched in X days.</span></dd>
+<dt>Link</dt><dd><a href="#">Live site or case study URL</a></dd>
+</dl></div>
+</article>
+
+<article class="case">
+<div class="shot"><div class="bar"><i></i><i></i><i></i></div><div class="blk w1"></div><div class="blk t"></div><div class="blk w2"></div></div>
+<div>
+<h3>Beauty brand speed and security overhaul</h3>
+<div class="chips"><span>Core Web Vitals</span><span>Caching</span><span>Backups</span><span>Git</span></div>
+<p>A performance and maintenance project on an existing WooCommerce site that was slow and fragile.</p>
+<dl>
+<dt>My role</dt><dd>Audit, fixes, plugin clean-up and ongoing maintenance routine.</dd>
+<dt>What I did</dt><dd>Optimised images, removed unused plugins, added caching, set up staged updates and automated backups with a tested restore.</dd>
+<dt>Result</dt><dd><span class="todo">Add real figures, e.g. PageSpeed mobile score X to Y.</span></dd>
+<dt>Link</dt><dd><a href="#">Live site or case study URL</a></dd>
+</dl></div>
+</article>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<h2>What I bring</h2>
+<p class="lead">Matched to the role at Maia Health &amp; Beauty.</p>
+<div class="skills">
+<div><h3>Build</h3><ul><li>WordPress themes and page builders</li><li>WooCommerce variations, shipping, checkout</li><li>HTML5, CSS3, JavaScript, PHP, MySQL</li><li>REST APIs and integrations</li></ul></div>
+<div><h3>Design</h3><ul><li>Wireframes and prototypes in Figma</li><li>Responsive layouts and accessibility</li><li>Consistent branding across several brands</li></ul></div>
+<div><h3>Grow</h3><ul><li>Technical SEO and schema markup</li><li>GA4, Search Console, Tag Manager</li><li>A/B testing and conversion improvements</li><li>Email and CRM integrations</li></ul></div>
+<div><h3>Maintain</h3><ul><li>Core Web Vitals and speed</li><li>Security, backups, staging</li><li>Documentation of site setups</li><li>AI-assisted workflows where they help</li></ul></div>
+</div></div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+<h2>Let’s talk</h2>
+<p class="lead">I’m applying for the Web Designer &amp; Developer role in Stratford and happy to walk through any project.</p>
+<a class="btn" href="mailto:you@example.com">you@example.com</a><a class="btn alt" href="#">LinkedIn</a><a class="btn alt" href="#">CV (PDF)</a>
+</div></section>
+<div class="wrap"><footer>© Your Name</footer></div>
+</body>
+</html>
